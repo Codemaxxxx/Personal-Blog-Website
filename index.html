@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Homepage</title>
+    <link rel="stylesheet" href="/css/main-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="/assets/Soulaces.svg" alt="Soulaces Logo">
+                </a>
+            </div>
+
+            <nav>
+                <button class="menu-open hide-desktop">
+                    <img class="header-bar" src="/assets/menu.svg" alt="Open menu">  
+                </button>
+
+                <ul class="nav-menu">
+                    <li>
+                        <li><a class="nav-links" href="/blog-page.html">About</a></li>
+                        <li><a class="nav-links" href="/blog-page.html">Blog</a></li>
+                        <li><a class="nav-links" href="/blog-page.html">Shop</a></li>
+                    </li>
+                    <li>
+                        <button class="main-btn btn">Sign Up</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="blog-card">
+                <div class="blog-indicator">Travel</div>
+                <div class="blog-title">How the awesome trip to Germany changed my...</div>
+                <div class="blog-subtitle">...had the opportunity to explore the many Restaurants in Germany, and all i can say is "wow"</div>
+                <a class="to-blog-page-link" href="/blog-page.html">continue reading</a>
+            </div>
+
+            <div class="posts-right">
+                <h3 class="post-header">Recent Posts</h3>
+                <div class="post-div">
+                    <a class="recent-posts" href="/blog-page.html">...meet my favourite place in the Cans</a>
+                </div>
+                <div class="post-div">
+                    <a class="recent-posts" href="/blog-page.html">...meet my favourite place in the Cans</a>
+                </div>
+                <div class="post-div">
+                    <a class="recent-posts" href="/blog-page.html">...meet my favourite place in the Cans</a>
+                </div>
+            </div>
+        </main>
+        
+
+        <section>
+            <div class="contact">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <div class="contact-title">
+                        <h2>Become a Soulacer</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="5ca83999-c358-455e-a9b4-b933af6aec19">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="name" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit" class="contact-btn btn">Submit</button>
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="blog-footer">
+                <h3 class="footer-text">Soulaces</h3>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

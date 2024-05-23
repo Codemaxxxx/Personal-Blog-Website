@@ -1,0 +1,40 @@
+:root {
+    --clr-background:hsl(173, 100%, 98%);
+    --clr-text: hsl(0, 0%, 27%);
+    --clr-cardHeadText: hsl(0, 0%, 15%);
+    --clr-cardLeft: hsl(11, 35%, 49%);
+    --clr-cardLeftHover: hsl(11, 100%, 79%);
+    --clr-cardText: hsl(0, 0%, 100%);
+    --clr-postRight: hsl(0, 11%, 31%);
+    --clr-postRightHover: hsl(0, 9%, 33%);
+    --clr-indicator: hsl(147, 34%, 13%);
+    --clr-cardLink: hsl(176, 60%, 60%);
+    --clr-cardLinkNext: hsl(176, 39%, 23%);
+    --clr-profile-background: hsl(176, 63%, 26%);
+    --clr-buttonNav: hsl(175, 56%, 33%);
+    --clr-buttonNavHover: hsl(175, 49%, 42%);
+    --clr-buttonFooter: hsl(0, 35%, 60%);
+    --clr-nav: hsl(0, 0%, 0%);
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--clr-background);
+    color: var(--clr-text);
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+/*Contact styles */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh; 
+    margin-bottom: 4em; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2em;
+}
+
+.contact-title h2 {
+    font-weight: 600;
+    color: var(--clr-text);
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.contact-title hr {
+    border: none;
+    width: 12em;
+    height: 0.5em;
+    background-color: var(--clr-background);
+    border-radius: 3em;
+}
+
+.contact-inputs {
+    width: 20em;
+    height: 3em;
+    border: none;
+    outline: none;
+    padding-left: 3em;
+    font-weight: 500;
+    color: var(--clr-text);
+    border-radius: 3em;
+}
+
+.contact-form textarea {
+    height: 10em;
+    padding-top: 3em;
+    border-radius: 3em;
+}
+
+.contact-inputs:focus {
+    border: 2px solid var(--clr-buttonNavHover);
+}

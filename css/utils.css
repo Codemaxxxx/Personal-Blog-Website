@@ -1,0 +1,123 @@
+/* xs */
+/* @media (min-width: 475px) {} */
+/* sm */
+/* @media (min-width: 640px) {} */
+/* md */
+/* @media (min-width: 768px) {} */
+/* lg */
+/* @media (min-width: 1024px) {} */
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--clr-buttonNav);
+    color: var(--clr-cardText);
+    padding: 0.5em 1em;
+    letter-spacing: -0.05em;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: var(--clr-buttonNavHover);
+    }
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+}
+
+section {
+    grid-area: st;
+    margin-top: 5rem;
+}
+
+footer {
+    grid-area: ft;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .container {
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "st"
+    "ft";
+        max-width: 475px;
+    }
+}
+/* sm */
+@media (min-width: 640px) {
+    .container {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "st"
+    "ft";
+        max-width: 640px; 
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+    grid-template-columns: 768px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "st"
+    "ft";
+        max-width: 768px;
+    }  
+}
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+    display: grid;
+    grid-template-columns: 1024px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "st"
+    "ft";
+        max-width: 1024px;
+    }
+}
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+    display: grid;
+    grid-template-columns: 1280px;
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "hd"
+    "main"
+    "st"
+    "ft";
+        max-width: 1280px;
+    }
+}

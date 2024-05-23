@@ -1,0 +1,336 @@
+@import url(/css/contact.css);
+@import url(/css/styles.css);
+@import url(/css/utils.css);
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.menu-open {
+    width: 0;
+    height: 0;
+}
+
+.header-bar {
+    color: var(--clr-nav);
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    .main {
+        display: inline-block;
+    }
+    
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        color: var(--clr-cardText);
+        background-color: var(--clr-cardLeft);
+        padding: 2em;
+        margin-left: 2em; 
+        border-radius: 2em;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: var(--clr-cardLeftHover);
+        } 
+    }
+
+    .posts-right {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 3em;
+        margin-left: 6em;
+        margin-right: 4em;
+    }
+
+    .post-header {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .post-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recent-posts {
+        background-color: var(--clr-postRight);
+        padding: 0.9em;
+        border-radius: 0.5em;
+        color: var(--clr-cardLink);
+        transition: background-color 0.5s;
+        &:hover {
+            background-color: var(--clr-postRightHover);
+        }
+    }
+
+    .blog-indicator {
+        font-weight: 700;
+        font-size: 1.3em;
+        padding: 0.5em;
+        color: var(--clr-indicator);
+    }
+
+    .blog-title {
+        font-weight: 600;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        color: var(--clr-nav);
+    }
+
+    .to-blog-page-link {
+        text-align: end;
+        margin-top: 1em;
+        color: var(--clr-cardLink);
+    }
+}
+/* sm */
+@media (min-width: 640px) {
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 2rem;
+    }
+    
+    .nav-links {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--clr-nav);
+        letter-spacing: -0.05em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .hide-desktop {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        gap: 10em;
+    }
+    
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        color: var(--clr-cardText);
+        background-color: var(--clr-cardLeft);
+        padding: 3em;
+        border-radius: 2em;
+        margin-top: 1.5em;
+        margin-left: 2em;
+        width: 30%;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: var(--clr-cardLeftHover);
+        }
+    }
+
+    .posts-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        position: absolute;
+        margin-left: 25em;
+        margin-right: 1em;
+        margin-top: 3em;
+    }
+
+    .post-header {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .post-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .recent-posts {
+        background-color: var(--clr-postRight);
+        padding: 0.9em;
+        border-radius: 0.5em;
+        color: var(--clr-cardLink);
+        transition: background-color 0.5s;
+        &:hover {
+            background-color: var(--clr-postRightHover);
+        }
+    }
+
+    .blog-indicator {
+        font-weight: 700;
+        font-size: 1.3em;
+        padding: 0.5em;
+        color: var(--clr-indicator);
+    }
+
+    .blog-title {
+        font-weight: 600;
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        color: var(--clr-nav);
+    }
+
+    .to-blog-page-link {
+        text-align: end;
+        margin-top: 1em;
+        color: var(--clr-cardLink);
+    }
+
+
+    .menu-open {
+        margin: 2rem;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 2rem;
+    }
+    
+    .nav-links {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--clr-nav);
+        letter-spacing: -0.05em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .hide-desktop {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        gap: 10em;
+        position: relative;
+    }
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -1em;
+        margin-left: 5em;
+    }
+
+    .post-div {
+        margin-left: 6em;
+    }
+
+    .contact {
+        margin-top: 3em;
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    .main {
+        display: flex;
+        gap: 10em;
+        position: relative;
+    }
+
+    .blog-card {
+        padding: 5em;
+        font-size: 1.2em;
+    }
+
+    .posts-right {
+        margin-top: 3em;
+        padding: 4em;
+    }
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        margin-top: -3em;
+        margin-left: 12em;
+    }
+
+    .post-div {
+        margin-left: 15em;
+    }
+
+    .contact {
+        margin-top: 4em;
+    }
+}
+/* xl */
+@media (min-width: 1280px) {
+    .main {
+        display: flex;
+        gap: 10em;
+        position: relative;
+    }
+
+    .blog-card {
+        padding: 4em;
+        font-size: 1.2em;
+    }
+
+    .posts-right {
+        margin-top: 1em;
+        padding: 8em;
+    }
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -4em;
+        margin-left: 16em;
+    }
+
+    .post-div {
+        margin-left: 20em;
+    }
+
+    .contact {
+        margin-top: 8em;
+    }
+}
+
+/* Footer */
+
+.blog-footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-text {
+    display: flex;
+    margin-bottom: 2em;
+    font-size: 1em;
+}

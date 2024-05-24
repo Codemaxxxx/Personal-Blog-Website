@@ -82,6 +82,20 @@
         }
     }
 
+    .blog-card-img {
+        display: flex;
+    }
+
+    .card-img {
+        width: 100%;
+        margin-top: 2em;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 80%;
+        }
+    }
+
     .blog-indicator {
         font-weight: 700;
         font-size: 1.3em;
@@ -245,8 +259,13 @@
         margin-left: 5em;
     }
 
+    .posts-right{
+        margin-top: 6em;
+    }
+
     .post-div {
         margin-left: 6em;
+        margin-top: 2em;
     }
 
     .contact {
@@ -267,7 +286,7 @@
     }
 
     .posts-right {
-        margin-top: 3em;
+        margin-top: 6em;
         padding: 4em;
     }
 
@@ -281,6 +300,7 @@
 
     .post-div {
         margin-left: 15em;
+        margin-top: 2em;
     }
 
     .contact {
@@ -301,7 +321,7 @@
     }
 
     .posts-right {
-        margin-top: 1em;
+        margin-top: 8em;
         padding: 8em;
     }
 

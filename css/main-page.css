@@ -345,7 +345,13 @@
 
 .blog-footer {
     display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+}
+
+.footer-div {
+    display: flex;
     justify-content: center;
 }
 
@@ -353,4 +359,33 @@
     display: flex;
     margin-bottom: 2em;
     font-size: 1em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 1em;
+    background-color: var(--clr-cardLeftHover);
+    margin: 3em;
+    border-radius: 40%;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: var(--clr-background);
+    }
+}
+
+.social-icons a i {
+    font-size: 1em;
+    color: var(--clr-cardText);
+    transition: 0.2s;
+
+    &:hover {
+        color: var(--clr-nav);
+    }
 }
